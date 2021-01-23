@@ -8,9 +8,9 @@ public class Task3 {
         int[][] array = new int[12][8];
         int index = 0;
         int sumBiggest = 0;
-        for (int i = 0; i < 12; i++) {
+        for (int i = 0; i < array.length; i++) {
             int sum = 0;
-            for (int j = 0; j < 8; j++) {
+            for (int j = 0; j < array[i].length; j++) {
                 array[i][j] = random.nextInt(51);
                 sum += array[i][j];
             }

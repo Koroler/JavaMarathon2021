@@ -8,18 +8,24 @@ public class Task4 {
         Random random = new Random();
         int index = 0;
         int sumBiggest = 0;
+        int quantity = 3; //сколько элементов нужно просуммировать
 
         for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(10001);
+            System.out.print(array[i] + " ");
         }
-        for (int i = 0; i < array.length-2; i++) {
-            int sum = array[i] + array[i + 1] + array[i + 2];
+        System.out.println();
+        for (int i = 0; i <= array.length - quantity; i++) {
+            int sum = 0;
+            for (int j = i; j < i + quantity; j++) {
+                sum += array[j];
+            }
             if (sum >= sumBiggest){
                 sumBiggest = sum;
                 index = i;
             }
         }
-        System.out.println("Сумма максимальной тройки: " + sumBiggest);
-        System.out.println("Индекс первого элемента этой тройки: " + index);
+        System.out.printf("Максимальная сумма из %d последовательных элементов: %d %n", quantity, sumBiggest);
+        System.out.println("Индекс первого элемента из суммы: " + index);
     }
 }
