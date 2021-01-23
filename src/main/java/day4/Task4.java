@@ -12,9 +12,7 @@ public class Task4 {
 
         for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(10001);
-            System.out.print(array[i] + " ");
         }
-        System.out.println();
         for (int i = 0; i <= array.length - quantity; i++) {
             int sum = 0;
             for (int j = i; j < i + quantity; j++) {
