@@ -11,9 +11,9 @@ public class Task2 {
 }
 
 class Motorcycle{
-    int year;
-    String color;
-    String model;
+    private int year;
+    private String color;
+    private String model;
 
     public Motorcycle(int year, String color, String model){
         this.year = year;
