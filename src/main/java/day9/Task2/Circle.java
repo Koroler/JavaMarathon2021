@@ -1,7 +1,7 @@
 package day9.Task2;
 
 public class Circle extends Figure{
-    double radius;
+    private double radius;
 
     public Circle(String color, double radius){
         super(color);

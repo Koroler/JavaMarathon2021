@@ -1,7 +1,7 @@
 package day9.Task1;
 
 public class Human {
-    String name;
+    private String name;
 
     public void setName(String name) { this.name = name; }
     public String getName() { return name; }

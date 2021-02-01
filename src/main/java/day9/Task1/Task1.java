@@ -5,8 +5,8 @@ public class Task1 {
         Student student = new Student("Epictetus", "Stoics");
         Teacher teacher = new Teacher("Marcus Aurelius", "Philosophy");
 
-        System.out.println(student.groupName);
-        System.out.println(teacher.subjectName);
+        System.out.println(student.getGroupName());
+        System.out.println(teacher.getSubjectName());
         student.printInfo();
         teacher.printInfo();
 
